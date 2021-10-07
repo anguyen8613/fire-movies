@@ -1,97 +1,121 @@
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background-color: #13151F;
-  color: #FFF;
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    background-color: #13151F;
+    color: #FFF;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
 
 .navbar {
-  height: 80px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .main-video {
-  width: 100vw;
-  height: 30vh;
-  overflow: hidden;
-  position: relative;
-  margin-bottom: 50px;
+    width: 100vw;
+    height: 30vh;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 50px;
 }
 
-.main-video img {
-  width: 100%;
-}
+    .main-video img {
+        width: 100%;
+    }
 
 .card {
-  width: 19.2%;
-  height: 200px;
-  border-radius: 5%;
-  margin: 0.4%;
-  filter: drop-shadow(5px 5px 10px #000);
+    width: 19.2%;
+    height: 200px;
+    border-radius: 5%;
+    margin: 0.4%;
+    filter: drop-shadow(5px 5px 10px #000);
 }
 
 .video-image {
-  width: 100%;
-  position: absolute;
-  top: 0;
+    width: 100%;
+    position: absolute;
+    top: 0;
 }
 
 .info {
-  position: relative;
-  margin-top: 30%;
-  margin-left: 50px;
-  max-width: 50%;
+    position: relative;
+    margin-top: 30%;
+    margin-left: 50px;
+    max-width: 50%;
 }
 
 .video-overlay {
-  position: absolute;
+    position: absolute;
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: 0.1em solid #FFFFFF;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 900;
+    width: 400px;
+    color: #FFFFFF;
+    background-color: dimgray;
+    text-align: center;
+    transition: all 0.2s
 }
 
+    .video-overlay:hover {
+        position: absolute;
+        display: inline-block;
+        padding: 0.35em 1.2em;
+        border: 0.1em solid #FFFFFF;
+        margin: 0 0.3em 0.3em 0;
+        border-radius: 0.12em;
+        box-sizing: border-box;
+        text-decoration: none;
+        font-family: 'Roboto',sans-serif;
+        font-weight: 900;
+        width: 400px;
+        color: #000000;
+        background-color: #FFFFFF;
+        text-align: center;
+        transition: all 0.2s
+    }
+
 .info-footer {
-  height: 100vh;
+    height: 100vh;
 }
 
 .account-info {
-  display: flex;
-  height: 50%;
-  margin: 20px;
+    display: flex;
+    height: 50%;
+    margin: 20px;
 }
 
 .avatar {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  margin-left: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 10px;
 }
 
 .franchise {
-  width: 20%;
-  background-color: #1E2841;
-  margin: 5px;
-  border-radius: 10px;
+    width: 20%;
+    background-color: #1E2841;
+    margin: 5px;
+    border-radius: 10px;
 }
 
 .video-feed {
-  display: flex;
+    display: flex;
 }
 
 .logo-wrapper {
-  padding: 5px 15px;
+    padding: 5px 15px;
 }
-
-
-
-
-
-
-
