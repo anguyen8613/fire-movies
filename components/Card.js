@@ -1,5 +1,5 @@
 const Card = ({ thumbnail }) => {
-    return <img className="card" src={thumbnail.url} alt={thumbnail.title}/>
+    return <img className="card-img" src={thumbnail.url} alt={thumbnail.title}/>
 }
 
 export default Card
