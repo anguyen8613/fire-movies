@@ -1,6 +1,5 @@
-import Link from 'next/link'
-import Image from 'next/image'
-import logo from '../public/fire-logo.jpg'
+import Link from 'next/link';
+import Image from 'next/image';
 
 const NavBar = ({account}) => {
     return (

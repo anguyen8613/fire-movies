@@ -1,13 +1,13 @@
-import {gql, GraphQLClient} from 'graphql-request'
-import Link from 'next/link'
-import Image from 'next/image'
-import Section from "../components/Section"
-import NavBar from "../components/NavBar"
-import disneyLogo from '../public/disney-button.png'
-import marvelLogo from '../public/marvel-button.png'
-import natgeoLogo from '../public/natgeo-button.png'
-import starwarsLogo from '../public/star-wars-button.png'
-import pixarLogo from '../public/pixar.png'
+import { gql, GraphQLClient } from 'graphql-request';
+import Link from 'next/link';
+import Image from 'next/image';
+import Section from "../components/Section";
+import NavBar from "../components/NavBar";
+import disneyLogo from '../public/disney-button.png';
+import marvelLogo from '../public/marvel-button.png';
+import natgeoLogo from '../public/natgeo-button.png';
+import starwarsLogo from '../public/star-wars-button.png';
+import pixarLogo from '../public/pixar.png';
 
 export const getStaticProps = async () => {
     const url = process.env.ENDPOINT
@@ -83,8 +83,7 @@ const Home = ({videos, account}) => {
             <NavBar account={account}/>
             <div className="app">
                 <div className="main-video">
-                    <img src={randomVideo(videos).thumbnail.url}
-                         alt={randomVideo(videos).title}/>
+                    <img src='static/starwars-banner.jpg' alt="star wars banner"/>
                 </div>
 
                 <div className="video-feed">
@@ -95,17 +94,17 @@ const Home = ({videos, account}) => {
                     </Link>
                     <Link href="#pixar">
                         <div className="franchise" id="pixar1">
-                            <Image src={pixarLogo}/>
+                            <Image src={pixarLogo} />
                         </div>
                     </Link>
-                    <Link href="#star-wars" id="star-wars1">
+                    <Link href="#drama" id="drama1">
                         <div className="franchise" >
-                            <Image src={starwarsLogo}/>
+                            <Image src={starwarsLogo} />
                         </div>
                     </Link>
                     <Link href="#nat-geo">
                         <div className="franchise" id="nat-geo1">
-                            <Image src={natgeoLogo}/>
+                            <Image src={natgeoLogo} />
                         </div>
                     </Link>
                     <Link href="#marvel">
@@ -131,8 +130,8 @@ const Home = ({videos, account}) => {
                 <div id="disney">
                     <Section  genre={'Disney'} videos={filterVideos(videos, 'disney')} />
                 </div>
-                <div id ="star-wars">
-                    <Section  genre={'Star Wars'} videos={filterVideos(videos, 'star-wars')} />
+                <div id ="drama">
+                    <Section  genre={'Drama'} videos={filterVideos(videos, 'drama')} />
                  </div>
 
             </div>

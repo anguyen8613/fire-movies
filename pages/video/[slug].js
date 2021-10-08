@@ -26,6 +26,9 @@ export const getServerSideProps = async (pageContext) => {
         thumbnail {
           url
         },
+        image{
+            url
+        },
         mp4 {
           url
         }
@@ -65,11 +68,10 @@ const Video = ({ video }) => {
             <div className="account-info">
                 <Link href="/"><a>Home</a></Link>
             </div>
-            {!watching && <img className="video-image" src={video.thumbnail.url} alt={video.title}/>}
+            {!watching && <img className="video-image" src={video.image.url} alt={video.title}/>}
             {!watching && <div className="info">
-                <p>{video.tags.join(', ')}</p>
-                <p>{video.description}</p>
-                <a href="/"><p>go back</p></a>
+                <p className="text">{video.tags.join(', ')}</p>
+                <p className="text">{video.description}</p>
                 <button
                     className="video-overlay"
                     onClick={() => {
