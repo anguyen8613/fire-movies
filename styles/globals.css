@@ -40,9 +40,9 @@ a {
 }
 
 .video-image {
-    width: 100%;
+    width: 98%;
     position: absolute;
-    top: 0;
+    top: 100px;
 }
 
 .info {

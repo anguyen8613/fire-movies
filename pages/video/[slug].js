@@ -1,5 +1,6 @@
 import { gql, GraphQLClient } from 'graphql-request'
 import { useState } from 'react';
+import Link from 'next/link';
 
 export const getServerSideProps = async (pageContext) => {
     const url = process.env.ENDPOINT
@@ -61,6 +62,9 @@ const Video = ({ video }) => {
 
     return (
         <>
+            <div className="account-info">
+                <Link href="/"><a>Home</a></Link>
+            </div>
             {!watching && <img className="video-image" src={video.thumbnail.url} alt={video.title}/>}
             {!watching && <div className="info">
                 <p>{video.tags.join(', ')}</p>
